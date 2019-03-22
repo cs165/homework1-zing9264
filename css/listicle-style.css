@@ -49,21 +49,12 @@ div.author-photo{
 span.author {
     font-weight: bold;
 }
+
 span.update{
     font-style: italic;
     padding-bottom: 10px;
     border-bottom: 2px solid #e6e6e6;
     display: inline-block;
-
-}
-div.context-block{
-    margin-left: auto; margin-right: auto;
-    display: block;
-    width: 66.7%;
-}
-div.num_bar{
-    width: 40px;
-    display:block;
 }
 
 .heading{
@@ -74,18 +65,17 @@ div.num_bar{
     color:  rgb(51, 51, 51);
 
 }
-.number{
-    color:rgba(0, 0, 0, 0.25);
-}
+
 a{
     color: #42b4d6;
     font-weight:normal;
     text-decoration: none;
+    font-family:'Roboto Slab', serif;
 }
 a:hover{
     text-decoration:underline
 }
-.context{
+.paragraphs{
     font-family:'Source Sans Pro',sans-serif;
     font-size: 18px;
     line-height: 32px;
@@ -97,17 +87,26 @@ a:hover{
 .context-top{
     height: 60px;
 }
+
+.topic{
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+}
+
+.article{
+    width: 66.67%;
+}
+
 .context-bottom{
     height: 120px;
 }
 .number{
     text-align: right;
-    width: 80px;
-    display: inline-block;
+    display: flex;
     font-family: 'Roboto Slab', serif;
     font-size: 36px;
-    margin-left: -120px;
-    margin-right: 40px;
-
+    position: relative;
+    left: -40px;
     color: rgba(0, 0, 0, 0.25);
 }
